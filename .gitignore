@@ -1,0 +1,125 @@
+# Visual Studio 2026
+.vs/
+.vscode/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio cache/options directory
+.vs/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+*.nuget.props
+*.nuget.targets
+.nuget/
+
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Rider
+.idea/
+*.sln.iml
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Test Results
+TestResults/
+*.trx
+*.coverage
+
+# Certificates and Code Signing
+*.pfx
+*.p12
+*.cer
+*.crt
+*.key
+*.snk
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.#*
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Build and packaging
+*.dll
+*.exe
+*.lib
+*.pdb
+*.exp
+*.ilk
+
+# Coverage files
+coverage/
+*.coverage
+
+# BenchmarkDotNet
+BenchmarkDotNet.Artifacts/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local environment
+.env
+.env.local
+*.local
+
+# Node modules (if used for frontend)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Package manager
+.paket/paket.exe
+
+# Deployment files
+PublishProfiles/
+publish/
+publish-targets/
