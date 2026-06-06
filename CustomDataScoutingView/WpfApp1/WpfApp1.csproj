@@ -9,7 +9,26 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <EmbeddedResource Remove="Resources.ja-JP.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Resources.ja-JP.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\CustomDataScouting\CustomDataScouting.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.ja-JP.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
 </Project>
