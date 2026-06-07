@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="CustomDataScouting/CustomDataScouting.csproj" />
+  <Project Path="Sample/Sample.csproj" Id="4e17f873-f4d0-4736-ad56-17a503f35628" />
   <Project Path="WpfApp1/WpfApp1.csproj" />
 </Solution>
