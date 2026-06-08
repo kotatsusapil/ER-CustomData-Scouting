@@ -16,7 +16,10 @@ namespace CustomDataScouting
         /// 順位
         /// </summary>
         [Name("rank")]
-        public int Rank { get; set; }
+        public int Rank
+        {
+            get; set;
+        }
 
         /// <summary>
         /// 実験体のレベル
@@ -28,7 +31,7 @@ namespace CustomDataScouting
         /// 実験体名
         /// </summary>
         [Name("character")]
-        public string Character { get; set; }
+        public string Subject{get; set;}
 
         /// <summary>
         /// プレイヤー名
@@ -147,5 +150,16 @@ namespace CustomDataScouting
         /// </summary>
         [Name("tournament kill score")]
         public double TournamentKillScore { get; set; }
+
+        /// <summary>
+        /// CSVを読み取った情報からチーム多淫委の情報に切り取る
+        /// </summary>
+        /// <param name="cSVData">CSVを読みとった情報</param>
+        /// <returns>チーム名をKeyとした辞書</returns>
+        internal static Dictionary<string, List<CustomCSVData>> getTeamData(IList<CustomCSVData> cSVData)
+        {
+            var grouped = cSVData.GroupBy(r => r.TeamName.TrimStart()).ToDictionary(g => g.Key, g => g.ToList());
+            return grouped;
+        }
     }
 }
