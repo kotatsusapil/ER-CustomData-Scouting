@@ -1,6 +1,7 @@
 ﻿using CsvHelper;
 using CsvHelper.Configuration.Attributes;
 using System.Globalization;
+using System.Text;
 
 namespace CustomDataScouting
 {
@@ -21,9 +22,10 @@ namespace CustomDataScouting
             var config = new CsvHelper.Configuration.CsvConfiguration(CultureInfo.InvariantCulture)
             {
                 PrepareHeaderForMatch = args => args.Header.Trim(), // ヘッダーの前後スペースを除去
+                TrimOptions = CsvHelper.Configuration.TrimOptions.Trim,
             };
 
-            using (var reader = new StreamReader(filePath))
+            using (var reader = new StreamReader(filePath, new UTF8Encoding(true)))
             using (var csv = new CsvReader(reader, config))
             {
                 try
